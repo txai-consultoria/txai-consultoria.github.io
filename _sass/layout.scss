@@ -30,26 +30,26 @@
 		p.title {
 			font-size: 50px;
 		}
-	
+		
 		.popover {
 			padding: 5px 20px;
-				border-radius: 0;
+			border-radius: 0;
 			width: 350px;
 			box-shadow: 5px 5px 0px rgba(128,0,128, 0.2);
 			a {
-			color: purple;
-			display: block;
-			&:not(:first-of-type) {
-			padding-top: 10px;
-		}
-		}
+				color: purple;
+				display: block;
+				&:not(:first-of-type) {
+					padding-top: 10px;
+				}
+			}
 			p {
-			font-size: 16px;
-			margin: 15px 0;
-			&.cta {
-			border-top: solid 1px purple;
-			padding-top: 15px;
-		}
-		}
+				font-size: 16px;
+				margin: 15px 0;
+				&.cta {
+					border-top: solid 1px purple;
+					padding-top: 15px;
+				}
+			}
 		}
 		
