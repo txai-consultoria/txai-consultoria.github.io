@@ -1,55 +1,35 @@
-		a {
-			text-decoration: underline !important;
-			color: purple !important;
-		}
-		a:hover {
-			color: #666 !important;
-		}
-		p, h1 {
-			line-height: 120%;
-			margin-bottom: 30px;
-		}
+@include font-face(monument, './fonts/');
 
-		.container {
-			width: 50%;
-			padding: 50px 0;
-		}
-		p {
-			font-size: 30px;
-		}
-		.language {
-			border-top: solid 1px purple;
-			margin-top: 50px;
-			padding-top: 50px;
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
 
-		}
-		.en {
 
-			font-style: italic;
+
+.download {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 1000;
+	color: white;
+	@include opacity(40);
+	background-color: purple;
+	padding: 5 15px;
+	@include radius(20px);
+	font-size: 15px;
+	margin: 20px;
+	font-family: monument;
+	text-transform: uppercase;
+	@include transition;
+	&:hover {
+		@include opacity(100);
+		text-decoration: none;
+		color: white;
+	}
+		@media  (orientation: landscape) {
+					&:before {
+						content: "Download "
+					}
 		}
-		p.title {
-			font-size: 50px;
-		}
-		
-		.popover {
-			padding: 5px 20px;
-			border-radius: 0;
-			width: 350px;
-			box-shadow: 5px 5px 0px rgba(128,0,128, 0.2);
-			a {
-				color: purple;
-				display: block;
-				&:not(:first-of-type) {
-					padding-top: 10px;
-				}
-			}
-			p {
-				font-size: 16px;
-				margin: 15px 0;
-				&.cta {
-					border-top: solid 1px purple;
-					padding-top: 15px;
-				}
-			}
-		}
-		
+}
