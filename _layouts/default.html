@@ -4,9 +4,12 @@ layout: default
 <html>
 {% include head.html %}
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-<a href="/manual/conexao-janeapa.zip" class="download">
-	Baixe a versão PDF
-</a>
+<div class="download">
+	<div class="action"><a href="/manual/manual-janeapa-digital.pdf" class="btn btn-primary">Versão Digital</a>
+	<a href="/manual/manual-janeapa-impressao.pdf" class="btn btn-primary">Versão para imprimir</a></div>
+	<div class="title">Baixe a versão PDF</div>
+	
+</div>
 	{{ content }}
 	{% include scripts.html %}
 </body>

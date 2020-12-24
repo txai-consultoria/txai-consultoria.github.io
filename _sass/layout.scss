@@ -6,37 +6,44 @@ body {
 }
 
 
-
+$tray: 80px;
 .download {
 	position: fixed;
-	top: 0px;
+	top: -$tray;
 	right: 0px;
-	z-index: 1000;
+	padding: 10px;
 	color: white;
-	@include opacity(40);
-	background-color: purple;
-box-sizing: margin-box;
-	text-align: center;
-	@include radius(50%);
-	font-size: 15px;
-	padding-top: 30px;
-	line-height: 130%;
-	margin: 5px;
-	@include rotate(10);
-	@include shadow(box, 5px 5px 5px rgba(0, 0, 0, .4));
-	width: 110px;
-	height: 110px;
-	font-family: monument;
+	@include radius(0, 0, 3px, 3px, irregular);
+	.title {
+		font-family: monument;
 	text-transform: uppercase;
-	@include transition;
+	line-height: 100%;
+	}
+	@include opacity(40);
+	@include shadow(box, 0 5px 3px rgba(0, 0, 0, 0.3));
+	background-color: purple;
+	font-size: 12px;
+	margin-right: 10px;
+	@include transition($time: 500ms);
 	&:hover {
 		@include opacity(100);
 		text-decoration: none;
 		color: white;
 
-	@include rotate(0);
-	@include shadow(box, 3px 3px 0px rgba(0, 0, 0, .1));
-		
+	top: 0;
+
+	
+	}
+	.action {
+		heighT: $tray;
+		.btn {
+			display: block;
+			font-size: 100%;
+			padding: 5px;
+		}
+		.btn:first-of-type {
+			margin-bottom: 5px;
+		}
 	}
 
 }
