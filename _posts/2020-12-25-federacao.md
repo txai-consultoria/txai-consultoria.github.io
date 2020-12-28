@@ -19,5 +19,5 @@ permalink: /:categories/:slug/
 - introduçao de voluntario com planeta
 - genencia projetos orfaos
 - acreditaçao de projetos
-- genencia voluntarios orfaos
-- acreditaçao dxs voluntaries
+- genencia voluntaries orfaos
+- acreditaçao de voluntaries
