@@ -1,8 +1,17 @@
-@include font-face(monument, './fonts/');
+
+  @font-face {
+    font-family: monument;
+    src:  url("./fonts/monument.woff") format("woff");
+  }
+
 
 body {
-	width: 100%;
-	overflow-x: hidden;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border: 0;
+	margin: 0;
+}
+h1, h2, h3, h4 {
+	font-family: monument;
 }
 
 
@@ -45,7 +54,6 @@ $tray: 80px;
 		.btn {
 			display: block;
 			font-size: 100%;
-			padding: 5px;
 			margin-top: 5px;
 		}
 		.btn:first-of-type {
@@ -55,10 +63,28 @@ $tray: 80px;
 
 }
 
+.btn {
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	border: solid 1px #ccc;
+	@include radius(3px);
+	text-decoration: none;
+	@include transition;
+	&:hover {
+		background-color: #ccc;
+	}
+}
+
 
 .manual {
-position: fixed;
+	
 z-index: -1;
-top: -32px;
+
 width: 100%;
+.firefox & {
+	position: absolute;
+	top: -32px;
+}
 }
