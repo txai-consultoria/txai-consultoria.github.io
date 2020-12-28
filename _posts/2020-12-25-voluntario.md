@@ -2,11 +2,10 @@
 layout: default
 title: Voluntário
 slug: voluntario
-categories: glossario
+categories: v1
 description: pessoa aliada aos princípios éticos da rede
 date: 20120-12-25
-version: v1
-permalink: /:version/:categories/:slug/
+permalink: /:categories/:slug/
 ---
 
 ## Responsabilidades:

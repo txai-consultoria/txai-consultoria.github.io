@@ -2,11 +2,10 @@
 layout: default
 title: Federação
 slug: federacao
-categories: glossario
+categories: v1
 description: composto de todos os planetas
 date: 20120-12-25
-version: v1
-permalink: /:version/:categories/:slug/
+permalink: /:categories/:slug/
 ---
 
 ## Responsabilidades:
