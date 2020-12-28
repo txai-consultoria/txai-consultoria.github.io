@@ -54,3 +54,11 @@ $tray: 80px;
 	}
 
 }
+
+
+.manual {
+position: fixed;
+z-index: -1;
+top: -32px;
+width: 100%;
+}
