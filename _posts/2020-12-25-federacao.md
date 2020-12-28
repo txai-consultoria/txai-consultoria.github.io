@@ -4,8 +4,9 @@ title: Federação
 slug: federacao
 categories: glossario
 description: composto de todos os planetas
-date: 2019-01-21 18:03:16 -0500
-permalink: /:categories/:slug/
+date: 20120-12-25
+version: v1
+permalink: /:version/:categories/:slug/
 ---
 
 ## Responsabilidades:
