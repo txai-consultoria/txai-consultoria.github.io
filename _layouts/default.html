@@ -4,28 +4,19 @@ layout: default
 <html>
 {% include head.html %}
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-<div class="download">
+	{% if page.path contains '_posts' %}
+	<div class="container">
+		<header class="header">
+			<a href="{{'/' | prepend: site.baseurl}}">voltar pro site</a>
+			<h1>{{ page.title }}</h1>
+			<h2>{{ page.description }}</h2>
+		</header>
+		{{ content }}
 
-	<div class="title">Baixe a versão PDF</div>
-    <div class="action"><a href="/manual/manual-janeapa-digital.pdf" class="btn" download>Versão Digital</a>
-  <a href="/manual/manual-janeapa-impressao.pdf" class="btn" download>Versão para imprimir</a></div>
-	
-</div>
-{% if page.path contains '_posts' %}
-<div class="container">
-	<header class="header">
-<a href="{{'/' | prepend: site.baseurl}}">voltar pro site</a>
-<h1>{{ page.title }}</h1>
-<h2>{{ page.description }}</h2>
-		
-
-	</header>
+	</div>
+	{% else %}
 	{{ content }}
-
-</div>
-{% else %}
-{{ content }}
-{% endif %}
+	{% endif %}
 	
 	{% include scripts.html %}
 
