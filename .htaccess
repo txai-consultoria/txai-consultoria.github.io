@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} iPhone
+RewriteCond %{HTTP_USER_AGENT} iPad
+RewriteRule .* /manual-janeapa-v1.pdf [R]
